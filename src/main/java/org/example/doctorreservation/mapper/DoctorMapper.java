@@ -13,7 +13,7 @@ public interface DoctorMapper {
     DoctorResponse toResponse(Doctor doctor);
     @Mapping(target = "specialty",ignore = true)
     @Mapping(target = "password",ignore = true)
-    Doctor toModel(Doctor doctor);
+    Doctor toModel(DoctorRequest doctorRequest);
     @Mapping(target = "specialty",ignore = true)
     @Mapping(target = "password",ignore = true)
     Doctor updateModel(DoctorRequest request, @MappingTarget Doctor doctor);

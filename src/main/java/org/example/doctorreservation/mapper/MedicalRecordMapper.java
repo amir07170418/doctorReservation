@@ -10,7 +10,7 @@ import org.mapstruct.MappingTarget;
 @Mapper(componentModel = "spring")
 public interface MedicalRecordMapper {
     @Mapping(target = "patientId",source = "patient.id")
-    @Mapping(target = "doctorId",source = "patient.id")
+    @Mapping(target = "doctorId",source = "doctor.id")
     MedicalRecordResponse toResponse(MedicalRecord medicalRecord);
     @Mapping(target = "patient",ignore = true)
     @Mapping(target = "doctor",ignore = true)

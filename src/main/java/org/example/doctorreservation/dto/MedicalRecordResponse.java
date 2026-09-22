@@ -8,7 +8,7 @@ public class MedicalRecordResponse {
     private String diagnosis;
     private String description;
     private LocalDateTime createdAt;
-    private Long patientID;
+    private Long patientId;
     private Long doctorId;
 
     public MedicalRecordResponse(Long id, String diagnosis, String description
@@ -17,7 +17,7 @@ public class MedicalRecordResponse {
         this.diagnosis = diagnosis;
         this.description = description;
         this.createdAt = createdAt;
-        this.patientID = patientID;
+        this.patientId = patientID;
         this.doctorId = doctorId;
     }
     public MedicalRecordResponse() {}
@@ -54,12 +54,12 @@ public class MedicalRecordResponse {
         this.createdAt = createdAt;
     }
 
-    public Long getPatientID() {
-        return patientID;
+    public Long getPatientId() {
+        return patientId;
     }
 
-    public void setPatientID(Long patientID) {
-        this.patientID = patientID;
+    public void setPatientId(Long patientId) {
+        this.patientId = patientId;
     }
 
     public Long getDoctorId() {
@@ -77,7 +77,7 @@ public class MedicalRecordResponse {
                 ", diagnosis='" + diagnosis + '\'' +
                 ", description='" + description + '\'' +
                 ", createdAt=" + createdAt +
-                ", patientID=" + patientID +
+                ", patientID=" + patientId +
                 ", doctorId=" + doctorId +
                 '}';
     }

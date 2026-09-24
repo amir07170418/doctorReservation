@@ -25,6 +25,9 @@ public class Payment {
         this.appointment = appointment;
     }
 
+    public Payment() {
+    }
+
     public Long getId() {
         return id;
     }

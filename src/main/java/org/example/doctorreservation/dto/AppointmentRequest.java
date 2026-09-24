@@ -9,16 +9,13 @@ public class AppointmentRequest {
     private LocalTime startTime;
     private String description;
     @NotNull
-    private Long patientId;
-    @NotNull
     private Long doctorId;
 
     public AppointmentRequest(LocalDate appointmentDate, LocalTime startTime,
-                              String description, Long patientId, Long doctorId) {
+                              String description, Long doctorId) {
         this.appointmentDate = appointmentDate;
         this.startTime = startTime;
         this.description = description;
-        this.patientId = patientId;
         this.doctorId = doctorId;
     }
 
@@ -49,13 +46,6 @@ public class AppointmentRequest {
         this.description = description;
     }
 
-    public Long getPatientId() {
-        return patientId;
-    }
-
-    public void setPatientId(Long patientId) {
-        this.patientId = patientId;
-    }
 
     public Long getDoctorId() {
         return doctorId;
@@ -71,7 +61,6 @@ public class AppointmentRequest {
                 "appointmentDate=" + appointmentDate +
                 ", startTime=" + startTime +
                 ", description='" + description + '\'' +
-                ", patientId=" + patientId +
                 ", doctorId=" + doctorId +
                 '}';
     }
